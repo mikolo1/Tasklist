@@ -1,0 +1,86 @@
+body{
+    margin: 10px;
+}
+.title{
+    font-size: 30px;
+}
+
+.formdiv{
+    margin-bottom: 10%;
+}
+.left{
+    float: left;
+    width: 30%;
+}
+
+.right{
+    float: left;
+    width: 65%;
+    margin-left: 50px;
+}
+
+.downfooter{
+    clear: both;
+}
+
+.tableClass{
+    text-align: center;
+    padding: 10px;
+    border: black 1px solid;
+    border-collapse: collapse;
+}
+.tableClass tr td, th{
+    border: black 1px solid;
+}
+
+.formedit{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.editText{
+    text-align: center;
+}
+
+.line:hover{
+    background-color: #dabcb7;
+}
+
+tr:nth-child(even) {background: #f9ffe2
+}
+tr:nth-child(odd) {background: #d4ffea
+}
+
+a {
+    color: #b00e43;
+    text-decoration: none;
+}
+a:hover {
+    color: #400819;
+    text-decoration: none;
+    color: red;
+}
+
+tr th{
+    background-color: #80ff64;
+}
+.langdiv{
+    width: 15%;
+}
+.buttonrow{
+    float: left;
+    width: 50%;
+}
+.clear{
+    clear: both;
+}
+.buttons{
+    text-align: center;
+}
+.divinfo{
+    color: #457b83;
+}
+.diverror{
+    color: #b01d22;
+}
