@@ -37,7 +37,7 @@
         <div class="form-group">
             <input type="hidden" value="${requestScope.task.id}" name="id">
             <label for="taskdescription">Opis zadania:</label>
-            <textarea class="form-control" id="taskdescription" name="editdescription"
+            <textarea class="form-control" id="taskdescription" name="editdescription" autofocus = "autofocus"
                       rows="2">${requestScope.task.description}</textarea>
         </div>
         <div class="form-group">

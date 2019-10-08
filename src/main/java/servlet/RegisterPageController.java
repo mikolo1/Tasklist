@@ -18,6 +18,7 @@ public class RegisterPageController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         HttpSession session = request.getSession();
         session.removeAttribute("userNotFound");
         request.getRequestDispatcher("registerpage.jsp").forward(request, response);
@@ -25,6 +26,7 @@ public class RegisterPageController extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         HttpSession session = request.getSession();
         if (StringUtils.isNotBlank(request.getParameter("name"))
                 && StringUtils.isNotBlank(request.getParameter("lastName"))

@@ -1,6 +1,5 @@
 package servlet;
 
-import model.ToDoList;
 import model.User;
 import org.apache.commons.lang3.StringUtils;
 import repositories.ToDoListRepository;
@@ -21,6 +20,7 @@ public class LoginPageController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        request.setCharacterEncoding("UTF-8");
         HttpSession session = request.getSession();
         session.removeAttribute("userExists");
         request.getRequestDispatcher("loginpage.jsp").forward(request, response);

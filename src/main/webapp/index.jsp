@@ -68,7 +68,7 @@
         <form method="post" action="todo">
             <div class="form-group">
                 <label for="taskdescription">Opis zadania:</label>
-                <textarea class="form-control" id="taskdescription" name="taskdescription" rows="2"></textarea>
+                <textarea class="form-control" id="taskdescription" name="taskdescription" rows="2" autofocus = "autofocus"></textarea>
             </div>
             <div class="form-group">
                 <label for="finishDate">Termin wykonania:</label>

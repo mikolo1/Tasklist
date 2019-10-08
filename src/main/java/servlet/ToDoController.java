@@ -24,12 +24,12 @@ public class ToDoController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 //        List<ToDoList> toDoLists = (List<ToDoList>) session.getAttribute("list");
+        request.setCharacterEncoding("UTF-8");
         HttpSession session = request.getSession();
         session.removeAttribute("userNotFound");
         User user = (User) session.getAttribute("user");
         List<ToDoList> toDoLists = tasksRepository.findByUser(user);
         request.setAttribute("list", toDoLists);
-        request.setCharacterEncoding("UTF-8");
 
         if (request.getParameter("taskid") != null) {
             Long id = Long.valueOf(request.getParameter("taskid"));

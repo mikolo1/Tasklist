@@ -18,7 +18,7 @@ public class EditController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HttpSession session = request.getSession();
+        request.setCharacterEncoding("UTF-8");
         ToDoList toDoList = tasksRepository.findById(Long.parseLong(request.getParameter("taskid")));
         request.setAttribute("task", toDoList);
         request.getRequestDispatcher("edittodo.jsp").forward(request, response);

@@ -43,7 +43,7 @@
     <form method="post" action="register">
         <div class="form-group">
             <label for="name">Podaj imię:</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="imię:">
+            <input type="text" class="form-control" id="name" name="name" placeholder="imię:" autofocus = "autofocus">
         </div>
         <div class="form-group">
             <label for="lastName">Podaj nazwisko:</label>

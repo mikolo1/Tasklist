@@ -51,7 +51,7 @@
     <form method="post" action="login">
         <div class="form-group">
             <label for="login">Adres email:</label>
-            <input type="email" class="form-control" id="login" name="login" placeholder="email:">
+            <input type="email" class="form-control" id="login" name="login" placeholder="email:" autofocus = "autofocus">
         </div>
         <div class="form-group">
             <label for="password">Hasło:</label>
