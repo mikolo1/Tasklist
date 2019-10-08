@@ -42,7 +42,6 @@ public class RegisterPageController extends HttpServlet {
             user.setLastName(request.getParameter("lastName"));
             user.setEmail(request.getParameter("login"));
             user.setPassword(request.getParameter("password"));
-            user.setEmail(request.getParameter("login"));
 
             userRepository.addUser(user);
             session.removeAttribute("userExists");

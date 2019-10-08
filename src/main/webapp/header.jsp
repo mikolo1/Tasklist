@@ -37,7 +37,7 @@
                     <a href="login">Zaloguj</a>
                 </c:when>
                 <c:otherwise>
-                    <a href="main?logout=">Wyloguj</a>
+                    <a href="main?logout">Wyloguj</a>
                 </c:otherwise>
             </c:choose>
         </td>
